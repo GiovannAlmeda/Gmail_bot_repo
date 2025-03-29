@@ -1,0 +1,13 @@
+{
+  "gologin_api_token": "YOUR_GOLOGIN_API_KEY_HERE",
+  "capmonster_api_key": "YOUR_CAPMONSTER_API_KEY_HERE",
+  "sms_activate_api_key": "YOUR_SMS_ACTIVATE_API_KEY_HERE",
+  "asocks_proxy": {
+    "ip": "YOUR_PROXY_IP_HERE",
+    "port": "YOUR_PROXY_PORT_HERE",
+    "username": "YOUR_PROXY_USERNAME",
+    "password": "YOUR_PROXY_PASSWORD"
+  },
+  "account_count": 15,
+  "output_file": "accounts.txt"
+}
