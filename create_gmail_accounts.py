@@ -6,7 +6,7 @@ import random
 import string
 import time
 import requests
-from gologin import GoLogin
+from pygologin import GoLogin
 from playwright.sync_api import sync_playwright
 
 # Manual API key and proxy setup (based on what you've provided)
@@ -60,9 +60,8 @@ def create_browser_profile():
         }
     })
 
-    # 👉 Set profile_id manually before calling .start()
     gl.profile_id = profile_id
-    debug_port = gl.start(profile_id)
+    debug_port = gl.start()  # Fixed: no argument passed
     return profile_id, debug_port, gl
 
 # Main run loop
@@ -99,5 +98,3 @@ with sync_playwright() as p:
         log_account(f"{username}@gmail.com", password)
 
 print("\n✅ All accounts processed and saved.")
-
-
